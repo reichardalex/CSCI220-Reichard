@@ -1,2 +1,11 @@
 # CSCI220-Reichard
-CSCI220 repo
+
+CSCI220
+
+Alex Reichard 
+
+Computer Information Systems major
+
+ 
+
+

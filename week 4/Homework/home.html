@@ -2,15 +2,22 @@
 
 <html>
 
+<!--Styling-->
 <style>
-h1 {text-align: center;}
-<<<<<<< HEAD
-=======
+h1 {text-align: center; font-family: Tahoma; color: rgb(85, 85, 85)}
+
+h2 {color: rgb(85, 85, 85)}
 
 th {text-align: left;}
 
 
->>>>>>> 36a8383b249143e363da91db1ff21e866f5afac2
+
+body {background-color: rgb(197, 197, 169);}
+
+table, th, td {
+  border: 1px solid black; background-color: lightgray;}
+
+  table {text-align: center;}
 </style>
 
 <!--Header and title with dividers.-->
@@ -27,6 +34,13 @@ th {text-align: left;}
     <!-- Body of website with step list, experiment description, result table, and dividers to seperate data.-->
       <body> 
         
+
+         <!-- Image-->
+    <img src="caffeine.jpg" align="right" style= "width: 100px; height:100px;"/>
+    
+
+
+
         <!-- Main body paragraphs-->
         <p> College students consume surprising quantities of <a href="https://en.wikipedia.org/wiki/Caffeine">caffeine</a> on average. This study seeks to determine if a correlation exists between the amount of 
             caffeine an individual consumes daily and that individual's <a href="https://en.wikipedia.org/wiki/Grading_in_education">grade point average</a> in school.</p>
@@ -40,13 +54,13 @@ th {text-align: left;}
             <a href="https://en.wikipedia.org/wiki/Caffeine">caffeine</a> led to neither a significant increase or decrease in overall <a href="https://en.wikipedia.org/wiki/Grading_in_education">GPA</a> performance.</p>
 
 
-            <hr style="height:2px;border-width:0;color:gray;background-color:gray"> 
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray;"> 
 
             <!-- List of steps in ordered list-->
-
+            <h2>Experiment Steps</h2>
+              
             <ol>
-              <h2>Experiment Steps</h2>
-                
+               
                 <li>
                   100 students were selected from volunteer applicants between the ages of 18-22 years old, with equal numbers of female and male participants and 
                   with a starting <a href="https://en.wikipedia.org/wiki/Grading_in_education">GPA</a> between 3.2 and 3.3. 
@@ -77,6 +91,7 @@ th {text-align: left;}
             <!-- Table with result data-->
 
             <table border = "1">
+                <h2>Results</h2>
               <tr>
                 <th>Group</th>
                 <th>Starting Average</th>
@@ -106,6 +121,22 @@ th {text-align: left;}
 
             <hr style="height:2px;border-width:0;color:gray;background-color:gray"> 
             
+
+            <!--Form with multiple input fields and sends email-->
+            <form action="mailto:JenniferExperiment@email.com" method = "POST" name="emailForm" enctype="text/plain">
+                <h2>Use the form below to email Jennifer with questions or more information.</h2>
+                
+                <label>Name</label>
+                <input type="text" name="Name: " size="20"/><br><br>
+                <label>Email Address</label>
+                <input type="text" name="Email Address: " size="40"/><br><br>
+                <label>Follow Up Questions</label>
+                <input type="text" name="Questions: " size="100" height="400"/><br><br>
+                <input type="submit" value="Submit">
+
+            </form>
+            
+
       </body>  
      
 </html>

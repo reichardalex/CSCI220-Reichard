@@ -1,5 +1,7 @@
 <!DOCTYPE html>
     <html>
+
+    <!--Styling-->
         <style>
 
          div {
@@ -11,12 +13,15 @@
                 margin-right: auto;
                 text-align: center;
                 background-color: rgb(143, 201, 229);
+                font-family:'Franklin Gothic Medium';
               }
+              a {font-family:'Franklin Gothic Medium'}
 
               li{text-align: left;}
+
         img{background-color: transparent;}
 
-        h1, h2{ text-align: center;}
+        h1{ text-align: center; color: rgb(143, 201, 229); font-family:'Franklin Gothic Medium'}
 
         body{background-color: rgb(56, 109, 109);}
 
@@ -25,44 +30,68 @@
 
         <head>
             <h1>Thanks To Our Investors!</h1>
+
+           <!--Menu-->
+            <div class="topnav" style="text-align: center; border: 4px solid rgb(118, 122, 118);">
+
+                <a class="active" href="home.html">Experiment Details</a> ,
+
+                <a class="active" href="investors.html">Investors</a>   
+                                      
+              </div> 
+              <br>
         </head>      
         
         <body align = center>
-
+            
+            <!--Radtech Section-->
          <div> 
 
-            <ul>
-                <img src="radtech-logo.png" style = "padding: 15px;">
-                <li>RadTech is an industry leader providing advanced technology for conducting scientific research.</li>
-                <li>Funding amount: $50,000</li>
-               
-            </ul>
-        </div>
-          <br></br>
-        <div> 
+            <img src= "radtech-logo.png" align = center>
 
-            <ul>
-                <img src="upstart-logo.png" align = center>
-                <li>Upstart research scientists are working to develop the next generation of safe, all-natural, and cost-effective
-                     supplements to help fight fatigue and provide mental focus for students and business professionals.</li>
-                <li>Funding amount: $75,000</li>
-               
-            </ul>
+            <!--Radtech Information-->
+            <table border = 1>
+              <tr>
+                <th>RadTech is an industry leader providing advanced technology for conducting scientific research.</th>
+                <th>Funding amount: $50,000</th>   
+              </tr>  
+                </table>       
         </div>
+        
           <br></br>
 
+          <!--Upstart Section-->
         <div> 
-
-            <ul>
-                <img src="polytech-logo.png" align = center>
-                <li>Polytechnic University is investing in research to benefit students by providing funding and internship opportunities for 
-                    students in biology and chemistry. </li>
-                <li>Funding amount: $25,000</li>
-               
-            </ul>
-        </div>
-
             
+            <img src="upstart-logo.png" align = center>
+
+            <!--Upstart Information-->
+            <table border = 1>
+              <tr>
+                <th>Upstart research scientists are working to develop the next generation of safe, all-natural, and cost-effective
+                    supplements to help fight fatigue and provide mental focus for students and business professionals.</th>
+                <th>Funding amount: $75,000</th>   
+              </tr>  
+                </table>    
+        </div>
+
+          <br></br>
+
+        <!--Polytech Section-->
+          
+        <div>   
+
+            <img src="polytech-logo.png" align = center>
+
+            <!--Polytech Information-->
+            <table border = 1>
+              <tr>
+                <th>Polytechnic University is investing in research to benefit students by providing funding and internship opportunities for 
+                    students in biology and chemistry.</th>
+                <th>Funding amount: $25,000</th>   
+              </tr>  
+            </table>
+        </div>         
         </body>
 
     </html>

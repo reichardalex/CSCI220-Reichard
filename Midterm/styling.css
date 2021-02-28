@@ -20,6 +20,16 @@ body{
     overflow: hidden;
   }
 
+  .header{
+    background-color:rgba(70, 66, 66, 0.75); padding: 10px; 
+    border: 1px solid rgba(87, 137, 168, 0.5); border-color: rgb(50, 100, 131);
+    overflow: hidden;
+  }
+.foot{
+  background-color:rgba(70, 66, 66, 0.75); padding: 10px; 
+  border: 1px solid rgba(87, 137, 168, 0.5); border-color: rgb(50, 100, 131);
+  overflow: hidden;
+}
 
 .menu{
   
@@ -85,3 +95,18 @@ h1 {text-align: center; color: white; font-family: "Space_Font"; padding: 10px; 
 h2{color: white; font-family: "Space_Font"; text-decoration: underline; padding: 5px;}
 
 th,td{padding:30px}
+
+label{color: white;}
+
+div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}

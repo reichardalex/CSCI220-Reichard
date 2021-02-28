@@ -50,22 +50,38 @@ body{
     align-self:auto;
   }
 
-.join{width: 401px; height: 88px; ;float:right;}
+.join{width: 401px; height: 88px; margin-left: auto; margin-right: auto;}
 
 .logos{width: 150px; height: 150px;}
 
+.logos:hover
+{
+  transform: scale(1.05);
+}
+
 .twitter{width: 180px; height: 150px;}
 
-.communities{text-align: center;}
+.twitter:hover
+{
+  transform: scale(1.05);
+}
+
+.communities{margin-left: auto; margin-right: auto;}
+
+
+.BuyShips{margin-left: auto; margin-right: auto;}
+
+.ships{width: 300px; height: 300px; margin-left: auto; margin-right: auto;}
+
+.ships:hover
+{
+  border: 2px solid rgb(98, 175, 223); 
+  transform: scale(1.05);
+}
+
 
 h1 {text-align: center; color: white; font-family: "Space_Font"; padding: 10px; text-decoration: underline;}
 
 h2{color: white; font-family: "Space_Font"; text-decoration: underline; padding: 5px;}
 
-th,td {
-  border: 3px solid white;
-}
-
-li {color: white;}
-
-
+th,td{padding:30px}

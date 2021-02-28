@@ -46,13 +46,26 @@ body{
     color:white;
   }
   
+  .clear {
+    align-self:auto;
+  }
+
 .join{width: 401px; height: 88px; ;float:right;}
 
-.reddit{width: 150px; height: 150px;}
+.logos{width: 150px; height: 150px;}
 
-h1 {text-align: left; color: white; font-family: "Space_Font"; padding: 10px;}
+.twitter{width: 180px; height: 150px;}
 
+.communities{text-align: center;}
 
-li {color: white ;}
+h1 {text-align: center; color: white; font-family: "Space_Font"; padding: 10px; text-decoration: underline;}
+
+h2{color: white; font-family: "Space_Font"; text-decoration: underline; padding: 5px;}
+
+th,td {
+  border: 3px solid white;
+}
+
+li {color: white;}
 
 

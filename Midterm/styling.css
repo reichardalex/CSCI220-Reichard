@@ -69,6 +69,10 @@ body{
   transform: scale(1.05);
 }
 
+.support{
+  width: 1000px;height: 555px;
+}
+
 .twitter{width: 180px; height: 150px;}
 
 .twitter:hover

@@ -50,27 +50,37 @@ body{
     text-align: center;
     
   }
-  
+
   .menu a:hover {
     background-color: rgb(4, 19, 29);
     color:white;
   }
   
-  .clear {
-    align-self:auto;
-  }
+  /*Image styling*/
 
-.join{width: 401px; height: 88px; margin-left: auto; margin-right: auto;}
+.join{width: 401px; height: 88px; padding: 40px;}
+
+.join:hover{
+  transform: scale(1.05);
+}
 
 .logos{width: 150px; height: 150px;}
 
 .logos:hover
 {
-  transform: scale(1.05);
+  transform: scale(1.1);
+}
+
+.ShermanOutpost{
+  width: 1000px; height: 555px;
 }
 
 .support{
-  width: 1000px;height: 555px;
+  width: 401px; height: 88px; padding: 40px;
+}
+
+.support:hover{
+  transform: scale(1.05);
 }
 
 .twitter{width: 180px; height: 150px;}
@@ -85,15 +95,30 @@ body{
 
 .BuyShips{margin-left: auto; margin-right: auto;}
 
-.ships{width: 300px; height: 300px; margin-left: auto; margin-right: auto;}
+.ships{width: 300px; height: 300px; margin-left: auto; margin-right: auto; border: 2px solid rgb(98, 175, 223); }
 
 .ships:hover
 {
-  border: 2px solid rgb(98, 175, 223); 
+  border: 4px solid white; 
   transform: scale(1.05);
 }
 
+.roadmap{
+  max-width: 1500px; height: auto; padding: 40px;
+}
 
+.expo{
+  padding: 40px;
+}
+
+.map{
+  width: 1500px; height:auto; padding: 40px;
+}
+
+.devs{
+  padding:40px
+}
+/*Headings and table stying*/
 h1 {text-align: center; color: white; font-family: "Space_Font"; padding: 10px; text-decoration: underline;}
 
 h2{color: white; font-family: "Space_Font"; text-decoration: underline; padding: 5px;}
@@ -107,6 +132,9 @@ div.form
     display: block;
     text-align: center;
 }
+
+/*Form styling*/
+
 form
 {
     display: inline-block;

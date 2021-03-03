@@ -10,8 +10,10 @@
 body{
   font-family: "Space_Font";
   background-image: url("pictures/moonBackground.jpg");background-size: 200%; 
-    background-repeat: no-repeat; background-size: cover;
+     background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+  
   }
 
   .container{
@@ -118,6 +120,13 @@ body{
 .devs{
   padding:40px
 }
+
+.citizencon{
+  padding: 40px
+}
+
+.ptu{width: 1500px; height:652px; padding: 40px }
+
 /*Headings and table stying*/
 h1 {text-align: center; color: white; font-family: "Space_Font"; padding: 10px; text-decoration: underline;}
 
@@ -126,6 +135,8 @@ h2{color: white; font-family: "Space_Font"; text-decoration: underline; padding:
 th,td{padding:30px}
 
 label{color: white;}
+
+.offline{color:red}
 
 div.form
 {

@@ -6,6 +6,4 @@ class Dog {
     }
   }
 
-  set Dog(){
-      
-  }
+  

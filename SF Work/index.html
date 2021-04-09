@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <div>
+        <h1>Employee Information</h1>
+       </div>
+       
+<script src= "../jquery-3.6.0.js"></script>
+        
+   </head>
+   <style>
+     div {background-color:hsla(202,52%,18%,0.75); padding: 10px; 
+    border: 1px solid rgba(87, 137, 168, 0.5); border-color: rgb(228, 232, 235);
+    overflow: hidden; text-align: center; padding:65px}  
+
+    table{margin-left: auto; margin-right: auto; background-color: cornsilk;}
+
+    input{background-color: cornsilk;}
+
+    h1{text-align: center; color: cornsilk;}
+
+    label{color: cornsilk;}
+    .th a:hover{
+        animation: b;
+    }
+        body{background-color:hsla(202,52%,18%,0.75);}
+    
+       </style>
+        <body>
+            <div>
+                <Form>
+                    <label>Name:</label>
+                    <input id ="name" name ="Name" type = "text">
+                    <label>Title:</label>
+                    <input id ="title" name ="Title" type = "text">
+                    <label>Date:</label>
+                    <input id ="date" name ="Date" type = "date">
+                    <input id ="submit" type="button" value="Add to Table">
+                </Form><br>
+            </div>
+          
+             <div>
+                <Table id= "employeeTable" border = 1>
+                    <tr>
+                        <th id= "nameTH">Name</th>
+                        <th id= "titleTH">Job Title</th>
+                        <th id= "dateTH">Date Hired</th>
+                      </tr>
+                </Table>
+    
+             </div>
+            
+            
+            <script>
+
+                $(document).ready(function(){
+                 $("#submit").click(function()
+                 {
+                   var name = $.trim($("#name").val());
+                    var title = $.trim($("#title").val());
+                    var date = $("#date").val();
+
+                    //adds new table row 
+                    if(name ==="" || title ==="" ||date ==="")
+                    {
+                        alert("Please fill in a value for every field.")
+                        
+                            $('#name').val("");
+                            $('#title').val("");
+                            $('#date').val("");
+                    }
+                    else
+                    {
+                        $('#employeeTable').append('<tr><td>'+name+'</td><td>'+title+'</td><td>'+date+'</td>');
+
+                            $('#name').val("");
+                            $('#title').val("");
+                            $('#date').val("");
+                    }
+
+                    });
+                });
+
+                $('#nameTH').click(function(){
+                    var table = $(this).parents('#employeeTable').eq(0)
+                    var rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
+                    this.asc = !this.asc
+                    if (!this.asc){rows = rows.reverse()}
+                   for (var i = 0; i < rows.length; i++){table.append(rows[i])}
+                        })
+                    function comparer(index) {
+                 return function(a, b) {
+                 var valA = getCellValue(a, index), valB = getCellValue(b, index)
+                 return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.toString().localeCompare(valB)
+                         }   
+                    }
+                function getCellValue(row, index){ return $(row).children('td').eq(index).text() }
+
+                $('#titleTH').click(function(){
+                    var table = $(this).parents('#employeeTable').eq(0)
+                    var rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
+                    this.asc = !this.asc
+                    if (!this.asc){rows = rows.reverse()}
+                   for (var i = 0; i < rows.length; i++){table.append(rows[i])}
+                });
+
+                $('#dateTH').click(function(){
+                    var table = $(this).parents('#employeeTable').eq(0)
+                    var rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
+                    this.asc = !this.asc
+                    if (!this.asc){rows = rows.reverse()}
+                   for (var i = 0; i < rows.length; i++){table.append(rows[i])}
+                });              
+            </script>
+           
+          
+        
+
+        </body>
+</html>

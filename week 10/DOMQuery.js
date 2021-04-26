@@ -20,7 +20,7 @@ positionOL.appendChild(newOL);
 
 var Button = document.getElementById('Button');
 
-// Button.addEventListener('click',AddListItem);
+Button.addEventListener('click',AddListItem);
 
 function AddListItem()
 {

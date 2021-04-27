@@ -1,4 +1,8 @@
-var subtotal;
+var sm57Cost =0;
+var sm58Cost = 0;
+var guitarCost = 0;
+var r16Cost = 0;
+var subtotal = 0;
 
 function loadTableData(items) {
     const table = document.getElementById("ShoppingCart");
@@ -56,16 +60,13 @@ document.getElementById("Sm57").onclick= function()
 
   var price = item1.price;
 
-  var internalSubtotal;
+  var Subtotal;
 
   var howMany =parseInt(document.getElementById("Sm57").value);
 
   var priceToAdd = price * howMany;
 
-internalSubtotal = priceToAdd;
-
-alert(internalSubtotal);
-subtotal = subtotal + internalSubtotal;
+    sm57Cost = priceToAdd;
 
 updateSubtotal();
 
@@ -75,34 +76,53 @@ document.getElementById("SG").onclick= function()
 {
     var price = item2.price;
 
-    var internalSubtotal;
-
   var howMany =parseInt(document.getElementById("SG").value);
 
  
   var priceToAdd = price * howMany;
- 
-internalSubtotal = priceToAdd;
+    
+  guitarCost = priceToAdd;
 
-subtotal = subtotal + internalSubtotal;
+
 updateSubtotal();
 }
 
 document.getElementById("SM58").onclick= function()
 {
-    alert("hey look at that you changed the mic 2");
+    var price = item3.price;
+
+  var howMany =parseInt(document.getElementById("SM58").value);
+
+ 
+  var priceToAdd = price * howMany;
+    
+  sm58Cost = priceToAdd;
+
+
+updateSubtotal();
 }
 
 document.getElementById("R16").onclick= function()
 {
-    alert("hey look at that you changed the r16");
+    var price = item4.price;
+
+  var howMany =parseInt(document.getElementById("R16").value);
+
+ 
+  var priceToAdd = price * howMany;
+    
+  r16Cost = priceToAdd;
+
+
+updateSubtotal();;
 }
 
 function updateSubtotal(){
 
+
+    subtotal= sm57Cost + sm58Cost + guitarCost + r16Cost;
+
 label = document.getElementById("cost");
 
 label.innerHTML="<h1>" + subtotal + "</h1>";
-
-
 }

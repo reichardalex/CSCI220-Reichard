@@ -7,7 +7,8 @@ var item1 = {
     quantity: 1,
     price: 99.0,
     description: "Dynamic Microphone with Cardioid Pickup Pattern, 40Hz-15kHz Frequency Response, Low Impedance, Includes Stand Adapter, and Zippered Carrying Case",
-    available: 9
+    available: 9,
+    deleteID: 1
 };
 
 var item2 = {
@@ -20,7 +21,8 @@ var item2 = {
     price: 1169.0,
     serial: 170099523,
     description: "Solidbody Electric Guitar with Mahogany Body, Mahogany Neck, Rosewood Fingerboard, and 2 Humbucking Pickups - Heritage Cherry",
-    available: 1
+    available: 1,
+    deleteID: 2
 };
 
 var item3 = {
@@ -32,7 +34,8 @@ var item3 = {
     quantity: 3,
     price: 99.0,
     description: "Dynamic Vocal Microphone with Cardioid Pickup Pattern and 50Hz-15kHz Frequency Response, Includes Stand Adapter, and Zippered Carrying Case",
-    available: 6
+    available: 6,
+    deleteID: 3
 };
 
 var item4 = {
@@ -44,5 +47,6 @@ var item4 = {
     quantity: 1,
     price: 399.99,
     description: "16-track Portable SD Recorder, USB Audio Interface, and DAW Control Surface with 8 Microphone Inputs, Built-in Stereo Condenser Microphones, Built-in Effects, 1GB SD Card, and USB - Mac/PC",
-    available: 14
+    available: 14,
+    deleteID: 4
 };
